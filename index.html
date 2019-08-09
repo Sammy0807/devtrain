@@ -80,7 +80,7 @@
   <section class="slider"> 
     <ul class="slides" style="padding-top: 80px;">
       <li>
-        <img src="https://images.unsplash.com/photo-1542315099045-93937d70c67a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" >
+        <img src="images/images/SuWASH (3).jpg" >
         <div class="caption center-align">
           <h3 class="blue-text text-darken-4">Development Initiative</h3>
           <h5 class="light grey-text text-lighten-1 hide-on-small-only">
@@ -90,7 +90,7 @@
         </div>
       </li>
       <li>
-        <img src="https://images.unsplash.com/photo-1458891216473-4f26bb4eb40e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+        <img src="images/images/SuWASH (5).jpg">
         <div class="caption left-align">
           <h3 class="blue-text text-darken-4">Entrepreneurship</h3>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">
@@ -100,7 +100,7 @@
         </div>
       </li>
       <li>
-        <img src="https://images.unsplash.com/photo-1549780100-a15a819b8ac5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
+        <img src="images/images/EcoToilet (1).jpeg">
         <div class="caption right-align">
           <h3 class="blue-text text-darken-4" >Community</h3>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">
@@ -110,7 +110,7 @@
         </div>
       </li>
       <li>
-        <img src="https://images.unsplash.com/photo-1565103001996-3fa52eb269d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+        <img src="images/images/SuWASH (1).jpg">
         <div class="caption right-align">
           <h3 class="blue-text text-darken-4">Sustainable Youth Development</h3>
           <h5 class="light grey-text text-lighten-3 hide-on-small-only">
@@ -470,17 +470,23 @@
     </div>
   </section>
                                                                           <!-- partners -->
-  <section class="section section-partners scrollspy" id="partners">
-    <div class="container">
-      <div class="row">        
-        <div class="center">
-          <h5 class="center-aligh green-text text-darken-3"><b>Our Partners</b></h5>
-          <img src="img/IMG-20180530-WA0001.jpg" style="height: auto; width: 20%;" alt="">
-          <h5 class="flow-text">Project Beautiful Benue</h5>
-        </div>        
-      </div>
-    </div>
-  </section>
+  <section class="section grey scrollspy lighten-4" id="partners">      
+          <h3 class="center-align green-text text-darken-3"><b>Partners</b></h3>
+      <div class="carousel">
+          <a class="carousel-item" href="#one!">
+          <img src="images/images/WhatsApp Image 2019-08-09 at 9.23.58 AM.jpeg" alt="">
+          <p>Sustainable TransEnvironment International Foundation</p>
+          </a>
+          <a class="carousel-item" href="#two!">
+          <img src="images/images/WhatsApp Image 2019-08-09 at 9.23.59 AM.jpeg" alt="">
+          <p>Aspire Coronation Trust Foundation</p>
+          </a>
+          <a class="carousel-item" href="#three!">
+          <img src="images/images/WhatsApp Image 2019-08-09 at 9.24.00 AM.jpeg" alt="">
+          <p>Angel Support Foundation</p>
+          </a>
+          </div>      
+    </section>
                                                                           <!-- contact us -->
   <section id="contact" class="section section-contact scrollspy grey lighten-2">
     <div class="container">
@@ -658,7 +664,7 @@
             <div class="col s12 m6">
               <h4 style="text-align: center">INNOVATION AWARD WINNER AMCOW AfricaSan5 Awards 2019</h4>
               <p style="text-align: justify">
-                DevTrain CEDI’s initiative to use EcoBricks to construct Eco-Toilets in schools has being considered among
+                DevTrain CEDI’s initiative to use EcoBricks to construct Eco-Toilets in schools was being considered among
                 the FINALISTS for the AMCOW AfricaSan5 Awards 2019, in the category of INNOVATION AWARD.
               </p>
               <p style="text-align: justify">
@@ -1020,6 +1026,11 @@
     M.ScrollSpy.init(ss, {
       throttle: 150
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {});
+  });
     </script>
     </body>
   </html>
